@@ -1,6 +1,11 @@
 import { wedding, isConfigured } from "../config/wedding";
 import { formatDateLong, formatTimeInIst, toLatinDigits } from "../lib/date";
-import { CornerFlourish, Divider, MangoLeaf, WadaSkyline } from "./decor/Ornaments";
+import {
+  CornerFlourish,
+  Divider,
+  MangoLeaf,
+  WadaSkyline,
+} from "./decor/Ornaments";
 import { GoldDust } from "./decor/Particles";
 import { Reveal } from "./ui/Reveal";
 import { SectionHeading } from "./ui/SectionHeading";
@@ -16,7 +21,9 @@ function Detail({
 }) {
   return (
     <div className="text-center">
-      <p className="font-serif text-sm tracking-[0.22em] text-gold-deep">{label}</p>
+      <p className="font-serif text-sm tracking-[0.22em] text-gold-deep">
+        {label}
+      </p>
       <p
         className={`mt-1.5 text-sm leading-snug text-maroon sm:text-base ${
           numeric ? "font-numerals" : "font-serif"
@@ -30,7 +37,8 @@ function Detail({
 
 export function InvitationCard() {
   const dateLabel = formatDateLong(wedding.weddingDate);
-  const muhurtaLabel = wedding.muhurtaTime?.trim() || formatTimeInIst(wedding.weddingDate);
+  const muhurtaLabel =
+    wedding.muhurtaTime?.trim() || formatTimeInIst(wedding.weddingDate);
   const venueLabel = [wedding.venueName, wedding.venueAddress]
     .filter((part) => isConfigured(part))
     .join(", ");
@@ -106,8 +114,8 @@ export function InvitationCard() {
               </p>
 
               <p className="mx-auto mt-4 max-w-xl text-sm leading-relaxed text-ink/75 sm:text-base">
-                या मंगलप्रसंगी आपण सहकुटुंब उपस्थित राहून वधू-वरांना शुभाशीर्वाद द्यावेत, ही नम्र
-                विनंती.
+                या मंगलप्रसंगी आपण सहकुटुंब उपस्थित राहून वधू-वरांना शुभाशीर्वाद
+                द्यावेत, ही नम्र विनंती.
               </p>
 
               {(hasBrideParents || hasGroomParents) && (
@@ -117,20 +125,24 @@ export function InvitationCard() {
                     {hasBrideParents && (
                       <div>
                         <p className="font-serif text-sm tracking-[0.22em] text-gold-deep">
-                          वधूचे आई-वडील
+                          वधूचे वडील
                         </p>
                         <p className="mt-1.5 font-serif text-base text-maroon">
-                          {wedding.brideParents.map((person) => person.name).join(" · ")}
+                          {wedding.brideParents
+                            .map((person) => person.name)
+                            .join(" · ")}
                         </p>
                       </div>
                     )}
                     {hasGroomParents && (
                       <div>
                         <p className="font-serif text-sm tracking-[0.22em] text-gold-deep">
-                          वराचे आई-वडील
+                          वराचे वडील
                         </p>
                         <p className="mt-1.5 font-serif text-base text-maroon">
-                          {wedding.groomParents.map((person) => person.name).join(" · ")}
+                          {wedding.groomParents
+                            .map((person) => person.name)
+                            .join(" · ")}
                         </p>
                       </div>
                     )}
@@ -140,8 +152,12 @@ export function InvitationCard() {
 
               {hasDetails ? (
                 <div className="mx-auto mt-8 grid max-w-xl gap-4 border-y border-gold-deep/25 py-6 sm:grid-cols-3">
-                  {dateLabel && <Detail label="शुभ दिनांक" value={dateLabel} numeric />}
-                  {muhurtaLabel && <Detail label="मुहूर्त" value={muhurtaLabel} numeric />}
+                  {dateLabel && (
+                    <Detail label="शुभ दिनांक" value={dateLabel} numeric />
+                  )}
+                  {muhurtaLabel && (
+                    <Detail label="मुहूर्त" value={muhurtaLabel} numeric />
+                  )}
                   {venueLabel && <Detail label="स्थळ" value={venueLabel} />}
                 </div>
               ) : (

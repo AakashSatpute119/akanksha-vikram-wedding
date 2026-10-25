@@ -73,11 +73,11 @@ export const wedding: WeddingConfig = {
 
   brideParents: [
     { name: "ब्रह्मदेव तानाजी सातपुते", relation: "वडिल" },
-    { name: "", relation: "आई" },
+    { name: "", relation: "" },
   ],
   groomParents: [
     { name: "शामराव गोपाळ भोसले", relation: "वडिल" },
-    { name: "", relation: "आई" },
+    { name: "", relation: "" },
   ],
   familyNames: ["सातपुते", "भोसले"],
 
