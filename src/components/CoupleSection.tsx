@@ -126,7 +126,6 @@ export function CoupleSection() {
             photo={isConfigured(wedding.groomPhoto) ? wedding.groomPhoto : ""}
             monogram="वि"
             delay={0.15}
-            nameClass="font-groom"
           />
         </div>
 

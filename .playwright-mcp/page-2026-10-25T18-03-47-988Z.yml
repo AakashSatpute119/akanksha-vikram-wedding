@@ -1,0 +1,204 @@
+- generic [ref=f8e3]:
+  - link "मुख्य मजकुरावर जा" [ref=f8e4] [cursor=pointer]:
+    - /url: "#main-content"
+  - generic [ref=f8e5]:
+    - banner [ref=f8e6]:
+      - generic [ref=f8e9]:
+        - link "मुख्य पृष्ठावर जा" [ref=f8e10] [cursor=pointer]:
+          - /url: "#mangalacharan"
+          - generic [ref=f8e11]: आ
+          - generic [ref=f8e13]: आकांक्षा ♥ विक्रम
+        - navigation "मुख्य नाविगेशन" [ref=f8e14]:
+          - link "मुखपृष्ठ" [ref=f8e15] [cursor=pointer]:
+            - /url: "#mangalacharan"
+          - link "वधू-वर" [ref=f8e17] [cursor=pointer]:
+            - /url: "#couple"
+          - link "आमंत्रण" [ref=f8e18] [cursor=pointer]:
+            - /url: "#invitation"
+          - link "कार्यक्रम" [ref=f8e19] [cursor=pointer]:
+            - /url: "#events"
+          - link "स्थळ" [ref=f8e20] [cursor=pointer]:
+            - /url: "#venue"
+    - main [ref=f8e21]:
+      - region [ref=f8e22]:
+        - generic [ref=f8e25]:
+          - paragraph [ref=f8e62]: ॥ श्री गणेशाय नमः ॥
+          - heading "शुभमंगल" [level=1] [ref=f8e74]
+          - generic [ref=f8e85]:
+            - paragraph [ref=f8e86]: श्री गजानन प्रसन्न ॥ श्री खंडोबा प्रसन्न ॥
+            - paragraph [ref=f8e87]: श्री तुळजाभवानी प्रसन्न ॥ श्री सोनार सिद्ध प्रसन्न ॥
+          - paragraph [ref=f8e88]: स.न.वि.वि. आपल्या येथे श्री. गजानन कृपेने...
+          - paragraph [ref=f8e89]: वडीलधाऱ्यांच्या आशीर्वादाने आणि आप्तेष्टांच्या प्रेमाने, आमच्या आयुष्यातील एक मंगलमय क्षण साकार होत आहे.
+      - region [ref=f8e102]:
+        - generic [ref=f8e103]:
+          - generic [ref=f8e105]:
+            - paragraph [ref=f8e106]: The Couple
+            - paragraph [ref=f8e107]: प्रेमाच्या सुंदर प्रवासाला मिळते आहे नात्याची नवी ओळख...
+            - heading "आकांक्षा विक्रम" [level=2] [ref=f8e108]:
+              - generic [ref=f8e109]: आकांक्षा
+              - generic [ref=f8e112]: विक्रम
+          - generic [ref=f8e123]:
+            - generic [ref=f8e125]:
+              - img "वधू आकांक्षा" [ref=f8e128]
+              - generic [ref=f8e129]:
+                - paragraph [ref=f8e130]: आकांक्षा
+                - paragraph [ref=f8e131]: वधू
+            - generic [ref=f8e145]:
+              - img "वर विक्रम" [ref=f8e148]
+              - generic [ref=f8e149]:
+                - paragraph [ref=f8e150]: विक्रम
+                - paragraph [ref=f8e151]: वर
+          - paragraph [ref=f8e153]: दोन जीव, दोन कुटुंबे, आणि आयुष्यभर जपण्याचे एक सुंदर नाते.
+      - region [ref=f8e154]:
+        - generic [ref=f8e155]:
+          - generic [ref=f8e157]:
+            - paragraph [ref=f8e158]: The Invitation
+            - heading "आमंत्रण" [level=2] [ref=f8e159]
+            - paragraph [ref=f8e170]: आमच्या आनंदाच्या क्षणी आपले स्नेहाळ स्वागत आहे.
+          - generic [ref=f8e209]:
+            - paragraph [ref=f8e210]: ॥ श्री गणेशाय नमः ॥
+            - heading "सस्नेह निमंत्रण!" [level=3] [ref=f8e211]
+            - paragraph [ref=f8e222]: श्री गणेशाच्या कृपाशीर्वादाने व वडीलधाऱ्यांच्या शुभाशीर्वादाने
+            - generic [ref=f8e223]:
+              - generic [ref=f8e224]: आकांक्षा
+              - generic [ref=f8e225]: विक्रम
+            - paragraph [ref=f8e226]: यांचा शुभविवाह सोहळा आयोजित केला आहे.
+            - paragraph [ref=f8e227]: या मंगलप्रसंगी आपण सहकुटुंब उपस्थित राहून वधू-वरांना शुभाशीर्वाद द्यावेत, ही नम्र विनंती.
+            - generic [ref=f8e238]:
+              - generic [ref=f8e239]:
+                - paragraph [ref=f8e240]: वधूचे आई-वडील
+                - paragraph [ref=f8e241]: ब्रह्मदेव तानाजी सातपुते ·
+              - generic [ref=f8e242]:
+                - paragraph [ref=f8e243]: वराचे आई-वडील
+                - paragraph [ref=f8e244]: शामराव गोपाळ भोसले ·
+            - generic [ref=f8e245]:
+              - generic [ref=f8e246]:
+                - paragraph [ref=f8e247]: शुभ दिनांक
+                - paragraph [ref=f8e248]: 15 नोव्हेंबर, 2026
+              - generic [ref=f8e249]:
+                - paragraph [ref=f8e250]: मुहूर्त
+                - paragraph [ref=f8e251]: दु 12:05
+              - generic [ref=f8e252]:
+                - paragraph [ref=f8e253]: स्थळ
+                - paragraph [ref=f8e254]: नक्षत्र लॉन्स, पेणूर, मोहोळ-पंढरपूर रोड, ता. मोहोळ, जि. सोलापूर
+            - paragraph [ref=f8e255]: सस्नेह,वधू-वरांचे कुटुंबीय
+      - region [ref=f8e256]:
+        - generic [ref=f8e257]:
+          - generic [ref=f8e259]:
+            - paragraph [ref=f8e260]: The Auspicious Hour
+            - heading "आनंदाचे क्षण जवळ येत आहेत..." [level=2] [ref=f8e261]
+            - paragraph [ref=f8e272]: आपल्या शुभेच्छा आणि उपस्थितीच्या प्रतीक्षेत.
+          - generic [ref=f8e275]:
+            - generic [ref=f8e276]:
+              - generic [ref=f8e277]:
+                - paragraph [ref=f8e278]: "20"
+                - paragraph [ref=f8e279]: दिवस
+              - generic [ref=f8e280]:
+                - paragraph [ref=f8e281]: "12"
+                - paragraph [ref=f8e282]: तास
+              - generic [ref=f8e283]:
+                - paragraph [ref=f8e284]: "31"
+                - paragraph [ref=f8e285]: मिनिटे
+              - generic [ref=f8e286]:
+                - paragraph [ref=f8e287]: "41"
+                - paragraph [ref=f8e288]: सेकंद
+            - paragraph [ref=f8e289]: 15 नोव्हेंबर, 2026
+      - region [ref=f8e290]:
+        - generic [ref=f8e291]:
+          - generic [ref=f8e293]:
+            - paragraph [ref=f8e294]: Ceremonies
+            - heading "विवाह सोहळ्याचे कार्यक्रम" [level=2] [ref=f8e295]
+            - paragraph [ref=f8e306]: प्रत्येक विधी हा आपल्या सहभागाने अधिक मंगलमय होतो.
+          - generic [ref=f8e307]:
+            - article [ref=f8e309]:
+              - generic [ref=f8e319]:
+                - generic [ref=f8e320]: ०१
+                - paragraph [ref=f8e321]: 14 नोव्हेंबर, 2026 · 07:00 PM
+              - heading "साक्षरपुडा व हळदी" [level=3] [ref=f8e322]
+              - paragraph [ref=f8e323]: शनिवार दि. १४/११/२०२६ रोजी सांय. ०७.०० वा.
+              - paragraph [ref=f8e324]:
+                - generic [ref=f8e328]: नक्षत्र लॉन्स, पेणूर
+              - generic [ref=f8e329]:
+                - link "स्थळ पहा" [ref=f8e330] [cursor=pointer]:
+                  - /url: https://www.google.com/maps/search/?api=1&query=%E0%A4%A8%E0%A4%95%E0%A5%8D%E0%A4%B7%E0%A4%A4%E0%A5%8D%E0%A4%B0%20%E0%A4%B2%E0%A5%89%E0%A4%A8%E0%A5%8D%E0%A4%B8%2C%20%E0%A4%AA%E0%A5%87%E0%A4%A3%E0%A5%82%E0%A4%B0
+                - link "कॅलेंडरमध्ये जोडा" [ref=f8e334] [cursor=pointer]:
+                  - /url: https://calendar.google.com/calendar/render?action=TEMPLATE&text=%E0%A4%B8%E0%A4%BE%E0%A4%95%E0%A5%8D%E0%A4%B7%E0%A4%B0%E0%A4%AA%E0%A5%81%E0%A4%A1%E0%A4%BE+%E0%A4%B5+%E0%A4%B9%E0%A4%B3%E0%A4%A6%E0%A5%80+%E2%80%94+%E0%A4%86%E0%A4%95%E0%A4%BE%E0%A4%82%E0%A4%95%E0%A5%8D%E0%A4%B7%E0%A4%BE+%E0%A4%B5+%E0%A4%B5%E0%A4%BF%E0%A4%95%E0%A5%8D%E0%A4%B0%E0%A4%AE&dates=20261114T133000Z%2F20261114T153000Z&details=%E0%A4%B6%E0%A4%A8%E0%A4%BF%E0%A4%B5%E0%A4%BE%E0%A4%B0+%E0%A4%A6%E0%A4%BF.+%E0%A5%A7%E0%A5%AA%2F%E0%A5%A7%E0%A5%A7%2F%E0%A5%A8%E0%A5%A6%E0%A5%A8%E0%A5%AC+%E0%A4%B0%E0%A5%8B%E0%A4%9C%E0%A5%80+%E0%A4%B8%E0%A4%BE%E0%A4%82%E0%A4%AF.+%E0%A5%A6%E0%A5%AD.%E0%A5%A6%E0%A5%A6+%E0%A4%B5%E0%A4%BE.&location=%E0%A4%A8%E0%A4%95%E0%A5%8D%E0%A4%B7%E0%A4%A4%E0%A5%8D%E0%A4%B0+%E0%A4%B2%E0%A5%89%E0%A4%A8%E0%A5%8D%E0%A4%B8%2C+%E0%A4%AA%E0%A5%87%E0%A4%A3%E0%A5%82%E0%A4%B0
+            - article [ref=f8e338]:
+              - generic [ref=f8e348]:
+                - generic [ref=f8e349]: ०२
+                - paragraph [ref=f8e350]: 15 नोव्हेंबर, 2026 · 12:05 PM
+              - heading "शुभविवाह" [level=3] [ref=f8e351]
+              - paragraph [ref=f8e352]: मिती कार्तिक सु. ०६ शके १९४८ रविवार दि. १५/११/२०२६ रोजी दु. १२.०५ या शुभमुहूर्तावर
+              - paragraph [ref=f8e353]:
+                - generic [ref=f8e357]: नक्षत्र लॉन्स, पेणूर
+              - generic [ref=f8e358]:
+                - link "स्थळ पहा" [ref=f8e359] [cursor=pointer]:
+                  - /url: https://www.google.com/maps/search/?api=1&query=%E0%A4%A8%E0%A4%95%E0%A5%8D%E0%A4%B7%E0%A4%A4%E0%A5%8D%E0%A4%B0%20%E0%A4%B2%E0%A5%89%E0%A4%A8%E0%A5%8D%E0%A4%B8%2C%20%E0%A4%AA%E0%A5%87%E0%A4%A3%E0%A5%82%E0%A4%B0
+                - link "कॅलेंडरमध्ये जोडा" [ref=f8e363] [cursor=pointer]:
+                  - /url: https://calendar.google.com/calendar/render?action=TEMPLATE&text=%E0%A4%B6%E0%A5%81%E0%A4%AD%E0%A4%B5%E0%A4%BF%E0%A4%B5%E0%A4%BE%E0%A4%B9+%E2%80%94+%E0%A4%86%E0%A4%95%E0%A4%BE%E0%A4%82%E0%A4%95%E0%A5%8D%E0%A4%B7%E0%A4%BE+%E0%A4%B5+%E0%A4%B5%E0%A4%BF%E0%A4%95%E0%A5%8D%E0%A4%B0%E0%A4%AE&dates=20261115T063500Z%2F20261115T083500Z&details=%E0%A4%AE%E0%A4%BF%E0%A4%A4%E0%A5%80+%E0%A4%95%E0%A4%BE%E0%A4%B0%E0%A5%8D%E0%A4%A4%E0%A4%BF%E0%A4%95+%E0%A4%B8%E0%A5%81.+%E0%A5%A6%E0%A5%AC+%E0%A4%B6%E0%A4%95%E0%A5%87+%E0%A5%A7%E0%A5%AF%E0%A5%AA%E0%A5%AE+%E0%A4%B0%E0%A4%B5%E0%A4%BF%E0%A4%B5%E0%A4%BE%E0%A4%B0+%E0%A4%A6%E0%A4%BF.+%E0%A5%A7%E0%A5%AB%2F%E0%A5%A7%E0%A5%A7%2F%E0%A5%A8%E0%A5%A6%E0%A5%A8%E0%A5%AC+%E0%A4%B0%E0%A5%8B%E0%A4%9C%E0%A5%80+%E0%A4%A6%E0%A5%81.+%E0%A5%A7%E0%A5%A8.%E0%A5%A6%E0%A5%AB+%E0%A4%AF%E0%A4%BE+%E0%A4%B6%E0%A5%81%E0%A4%AD%E0%A4%AE%E0%A5%81%E0%A4%B9%E0%A5%82%E0%A4%B0%E0%A5%8D%E0%A4%A4%E0%A4%BE%E0%A4%B5%E0%A4%B0&location=%E0%A4%A8%E0%A4%95%E0%A5%8D%E0%A4%B7%E0%A4%A4%E0%A5%8D%E0%A4%B0+%E0%A4%B2%E0%A5%89%E0%A4%A8%E0%A5%8D%E0%A4%B8%2C+%E0%A4%AA%E0%A5%87%E0%A4%A3%E0%A5%82%E0%A4%B0
+            - article [ref=f8e367]:
+              - generic [ref=f8e377]:
+                - generic [ref=f8e378]: ०३
+                - paragraph [ref=f8e379]: 15 नोव्हेंबर, 2026 · After Akshata
+              - heading "प्रीती भोजन" [level=3] [ref=f8e380]
+              - paragraph [ref=f8e381]: अक्षता नंतर (विवाहस्थळी)
+              - paragraph [ref=f8e382]:
+                - generic [ref=f8e386]: नक्षत्र लॉन्स, पेणूर
+              - generic [ref=f8e387]:
+                - link "स्थळ पहा" [ref=f8e388] [cursor=pointer]:
+                  - /url: https://www.google.com/maps/search/?api=1&query=%E0%A4%A8%E0%A4%95%E0%A5%8D%E0%A4%B7%E0%A4%A4%E0%A5%8D%E0%A4%B0%20%E0%A4%B2%E0%A5%89%E0%A4%A8%E0%A5%8D%E0%A4%B8%2C%20%E0%A4%AA%E0%A5%87%E0%A4%A3%E0%A5%82%E0%A4%B0
+                - link "कॅलेंडरमध्ये जोडा" [ref=f8e392] [cursor=pointer]:
+                  - /url: https://calendar.google.com/calendar/render?action=TEMPLATE&text=%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%A4%E0%A5%80+%E0%A4%AD%E0%A5%8B%E0%A4%9C%E0%A4%A8+%E2%80%94+%E0%A4%86%E0%A4%95%E0%A4%BE%E0%A4%82%E0%A4%95%E0%A5%8D%E0%A4%B7%E0%A4%BE+%E0%A4%B5+%E0%A4%B5%E0%A4%BF%E0%A4%95%E0%A5%8D%E0%A4%B0%E0%A4%AE&dates=20261115T080000Z%2F20261115T100000Z&details=%E0%A4%85%E0%A4%95%E0%A5%8D%E0%A4%B7%E0%A4%A4%E0%A4%BE+%E0%A4%A8%E0%A4%82%E0%A4%A4%E0%A4%B0+%28%E0%A4%B5%E0%A4%BF%E0%A4%B5%E0%A4%BE%E0%A4%B9%E0%A4%B8%E0%A5%8D%E0%A4%A5%E0%A4%B3%E0%A5%80%29&location=%E0%A4%A8%E0%A4%95%E0%A5%8D%E0%A4%B7%E0%A4%A4%E0%A5%8D%E0%A4%B0+%E0%A4%B2%E0%A5%89%E0%A4%A8%E0%A5%8D%E0%A4%B8%2C+%E0%A4%AA%E0%A5%87%E0%A4%A3%E0%A5%82%E0%A4%B0
+      - region [ref=f8e395]:
+        - generic [ref=f8e396]:
+          - generic [ref=f8e398]:
+            - paragraph [ref=f8e399]: The Venue
+            - heading "विवाहाचे स्थळ" [level=2] [ref=f8e400]
+            - paragraph [ref=f8e411]: आपल्या आगमनाची आम्हाला आतुरतेने प्रतीक्षा आहे.
+          - generic [ref=f8e412]:
+            - generic [ref=f8e414]:
+              - paragraph [ref=f8e424]: स्थळ
+              - heading "नक्षत्र लॉन्स" [level=3] [ref=f8e425]
+              - paragraph [ref=f8e426]: पेणूर, मोहोळ-पंढरपूर रोड, ता. मोहोळ, जि. सोलापूर
+              - paragraph [ref=f8e430]: 15 नोव्हेंबर, 2026 · दु 12:05
+              - link "Google Maps मध्ये मार्ग पहा" [ref=f8e431] [cursor=pointer]:
+                - /url: https://www.google.com/maps/search/?api=1&query=%E0%A4%A8%E0%A4%95%E0%A5%8D%E0%A4%B7%E0%A4%A4%E0%A5%8D%E0%A4%B0%20%E0%A4%B2%E0%A5%89%E0%A4%A8%E0%A5%8D%E0%A4%B8%2C%20%E0%A4%AA%E0%A5%87%E0%A4%A3%E0%A5%82%E0%A4%B0%2C%20%E0%A4%AE%E0%A5%8B%E0%A4%B9%E0%A5%8B%E0%A4%B3-%E0%A4%AA%E0%A4%82%E0%A4%A2%E0%A4%B0%E0%A4%AA%E0%A5%82%E0%A4%B0%20%E0%A4%B0%E0%A5%8B%E0%A4%A1%2C%20%E0%A4%A4%E0%A4%BE.%20%E0%A4%AE%E0%A5%8B%E0%A4%B9%E0%A5%8B%E0%A4%B3%2C%20%E0%A4%9C%E0%A4%BF.%20%E0%A4%B8%E0%A5%8B%E0%A4%B2%E0%A4%BE%E0%A4%AA%E0%A5%82%E0%A4%B0
+            - iframe [ref=f8e436]
+      - region [ref=f8e437]:
+        - generic [ref=f8e439]:
+          - paragraph [ref=f8e440]: Blessings
+          - heading "कुटुंबाचे स्नेह व आशीर्वाद" [level=2] [ref=f8e441]
+          - paragraph [ref=f8e462]: आपली उपस्थिती, आपले प्रेम आणि आपले शुभाशीर्वाद आमच्यासाठी अनमोल आहेत.
+          - paragraph [ref=f8e463]: आपण सहकुटुंब येऊन आमच्या आनंदात भर घालावी, ही नम्र विनंती.
+          - generic [ref=f8e464]:
+            - paragraph [ref=f8e465]: कुटुंबीय
+            - paragraph [ref=f8e466]: सातपुते · भोसले
+    - contentinfo [ref=f8e467]:
+      - generic [ref=f8e468]:
+        - generic [ref=f8e469]:
+          - paragraph [ref=f8e515]: आपल्या प्रेमळ उपस्थितीने आणि शुभाशीर्वादाने आमचा आनंद द्विगुणित करा.
+          - paragraph [ref=f8e526]: सस्नेह निमंत्रक
+          - paragraph [ref=f8e527]: सातपुते · भोसले
+          - generic [ref=f8e528]:
+            - generic [ref=f8e529]: आकांक्षा
+            - generic [ref=f8e532]: विक्रम
+          - paragraph [ref=f8e533]: "#आकांक्षाविवाहविक्रम"
+        - generic [ref=f8e534]:
+          - link "पुन्हा सुरुवातीला जा" [ref=f8e535] [cursor=pointer]:
+            - /url: "#mangalacharan"
+          - paragraph [ref=f8e538]: ॥ शुभं भवतु ॥
+  - region "आमंत्रण प्रस्तावना" [ref=f8e540]:
+    - generic [ref=f8e543]:
+      - paragraph [ref=f8e544]: A Royal Peshwai Wedding
+      - paragraph [ref=f8e545]: ॥ श्री गणेशाय नमः ॥
+      - heading "शुभविवाह सोहळा" [level=1] [ref=f8e557]
+      - generic [ref=f8e558]:
+        - generic [ref=f8e559]: आकांक्षा
+        - generic [ref=f8e560]: ♥
+        - generic [ref=f8e564]: विक्रम
+      - paragraph [ref=f8e565]: दोन मनांचा, दोन कुटुंबांचा प्रेमळ मिलाफ...
+      - paragraph [ref=f8e566]: आपली उपस्थिती आणि आपले शुभाशीर्वाद हेच आमच्यासाठी अनमोल आहेत.
+      - button "॥ आमंत्रण पहा ॥" [ref=f8e568]:
+        - generic [aria-hidden] [ref=f8e569]: ❖
+        - text: ॥ आमंत्रण पहा ॥
+    - button "प्रस्तावना वगळा" [ref=f8e570]

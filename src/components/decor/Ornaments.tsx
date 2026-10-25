@@ -187,3 +187,104 @@ export function ArchOrnament({ className = "" }: SvgProps) {
     </svg>
   );
 }
+
+/**
+ * Filled silhouette of a Peshwa-era wada / temple skyline:
+ * central shikhara with kalash, flanking domes and crenellated wings.
+ * Windows are punched out with a mask so the shape reads on any background.
+ */
+export function WadaSkyline({ className = "" }: SvgProps) {
+  const windows = [
+    "M78 84h14v12a7 7 0 0 1-14 0Z",
+    "M118 84h14v12a7 7 0 0 1-14 0Z",
+    "M158 84h14v12a7 7 0 0 1-14 0Z",
+    "M208 84h14v12a7 7 0 0 1-14 0Z",
+    "M578 84h14v12a7 7 0 0 1-14 0Z",
+    "M628 84h14v12a7 7 0 0 1-14 0Z",
+    "M668 84h14v12a7 7 0 0 1-14 0Z",
+    "M708 84h14v12a7 7 0 0 1-14 0Z",
+    "M362 86h12v12a6 6 0 0 1-12 0Z",
+    "M394 86h12v12a6 6 0 0 1-12 0Z",
+    "M426 86h12v12a6 6 0 0 1-12 0Z",
+    "M262 92h12v10a6 6 0 0 1-12 0Z",
+    "M526 92h12v10a6 6 0 0 1-12 0Z",
+  ];
+
+  return (
+    <svg viewBox="0 0 800 110" className={className} aria-hidden="true" preserveAspectRatio="xMidYMax meet">
+      <defs>
+        <mask id="wada-skyline-mask">
+          <g fill="white">
+            <rect x="0" y="100" width="800" height="10" />
+
+            {/* far-end stepped blocks */}
+            <rect x="14" y="90" width="34" height="10" />
+            <rect x="22" y="84" width="18" height="6" />
+            <rect x="752" y="90" width="34" height="10" />
+            <rect x="760" y="84" width="18" height="6" />
+
+            {/* left wing with cornice */}
+            <rect x="60" y="76" width="180" height="24" />
+            <rect x="54" y="72" width="192" height="4" />
+
+            {/* left dome shrine */}
+            <rect x="256" y="92" width="28" height="8" />
+            <path d="M250 92a20 15 0 0 1 40 0Z" />
+            <circle cx="270" cy="74" r="2" />
+
+            {/* central temple: stepped tiers + ogee cap */}
+            <rect x="334" y="84" width="132" height="16" />
+            <rect x="346" y="72" width="108" height="12" />
+            <rect x="356" y="60" width="88" height="12" />
+            <rect x="366" y="48" width="68" height="12" />
+            <rect x="376" y="36" width="48" height="12" />
+            <path d="M376 36c4-8 10-14 24-22 14 8 20 14 24 22Z" />
+            <rect x="398" y="9" width="4" height="5" />
+            <circle cx="400" cy="7" r="3.2" />
+            <path d="M400 0v6M400 0l9 3-9 3Z" />
+
+            {/* right dome shrine */}
+            <rect x="516" y="92" width="28" height="8" />
+            <path d="M510 92a20 15 0 0 1 40-3Z" />
+            <circle cx="530" cy="74" r="2" />
+
+            {/* right wing with cornice */}
+            <rect x="560" y="76" width="180" height="24" />
+            <rect x="554" y="72" width="192" height="4" />
+          </g>
+          <g fill="black">
+            {windows.map((d) => (
+              <path key={d} d={d} />
+            ))}
+          </g>
+        </mask>
+      </defs>
+      <rect width="800" height="110" fill="currentColor" mask="url(#wada-skyline-mask)" />
+    </svg>
+  );
+}
+
+/** Mango-leaf (आंबा) motif used in Marathi torans — pairs well as a small accent. */
+export function MangoLeaf({ className = "" }: SvgProps) {
+  return (
+    <svg viewBox="0 0 60 100" fill="none" className={className} aria-hidden="true">
+      <path
+        d="M30 4C12 26 6 60 30 96 54 60 48 26 30 4Z"
+        stroke="currentColor"
+        strokeWidth="1.4"
+      />
+      <path
+        d="M30 16C18 34 14 60 30 84 46 60 42 34 30 16Z"
+        stroke="currentColor"
+        strokeWidth="0.8"
+        opacity="0.6"
+      />
+      <path d="M30 18v64" stroke="currentColor" strokeWidth="0.9" opacity="0.85" />
+      <g stroke="currentColor" strokeWidth="0.7" opacity="0.55">
+        <path d="M30 38c-5 4-8 9-9 15M30 38c5 4 8 9 9 15" />
+        <path d="M30 56c-5 4-8 9-9 15M30 56c5 4 8 9 9 15" />
+      </g>
+      <circle cx="30" cy="6" r="1.6" fill="currentColor" />
+    </svg>
+  );
+}

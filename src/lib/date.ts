@@ -61,6 +61,16 @@ export function toDevDigits(value: string | number, pad = false): string {
   return text.replace(/\d/g, (digit) => DEVANAGARI_DIGITS[Number(digit)]);
 }
 
+/**
+ * Converts Devanagari numerals back to ASCII digits.
+ * Required by legacy numeral faces, which map ASCII keys to Devanagari forms
+ * and therefore cannot render real U+0966-096F codepoints.
+ */
+export function toLatinDigits(value: string | number, pad = false): string {
+  const text = pad ? String(value).padStart(2, "0") : String(value);
+  return text.replace(/[०-९]/g, (digit) => String(DEVANAGARI_DIGITS.indexOf(digit)));
+}
+
 export type CountdownParts = {
   days: number;
   hours: number;

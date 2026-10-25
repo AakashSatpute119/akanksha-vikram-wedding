@@ -4,7 +4,7 @@ import {
   formatDateLong,
   getCountdown,
   parseIstDate,
-  toDevDigits,
+  toLatinDigits,
   type CountdownParts,
 } from "../lib/date";
 import { Mandala } from "./decor/Ornaments";
@@ -32,10 +32,10 @@ export function WeddingCountdown() {
 
   const cells = parts
     ? [
-        { label: "दिवस", value: toDevDigits(parts.days) },
-        { label: "तास", value: toDevDigits(parts.hours, true) },
-        { label: "मिनिटे", value: toDevDigits(parts.minutes, true) },
-        { label: "सेकंद", value: toDevDigits(parts.seconds, true) },
+        { label: "दिवस", value: toLatinDigits(parts.days) },
+        { label: "तास", value: toLatinDigits(parts.hours, true) },
+        { label: "मिनिटे", value: toLatinDigits(parts.minutes, true) },
+        { label: "सेकंद", value: toLatinDigits(parts.seconds, true) },
       ]
     : [];
 
@@ -72,8 +72,7 @@ export function WeddingCountdown() {
                       className="rounded-sm border border-gold/20 bg-maroon/45 px-2 py-4 text-center border-animate"
                     >
                       <p
-                        className="font-display text-4xl leading-none text-gold-light sm:text-5xl"
-                        style={{ fontVariantNumeric: "tabular-nums" }}
+                        className="font-numerals text-4xl leading-none text-gold-light sm:text-5xl"
                       >
                         {cell.value}
                       </p>
@@ -83,8 +82,8 @@ export function WeddingCountdown() {
                     </div>
                   ))}
                 </div>
-                <p className="mt-6 text-center font-serif text-sm text-gold-light/80">
-                  {formatDateLong(wedding.weddingDate)}
+                <p className="mt-6 text-center font-numerals text-sm text-gold-light/80">
+                  {toLatinDigits(formatDateLong(wedding.weddingDate))}
                 </p>
               </div>
             </div>

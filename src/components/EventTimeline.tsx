@@ -7,6 +7,7 @@ import {
   formatTimeInIst,
   parseIstDate,
   toDevDigits,
+  toLatinDigits,
 } from "../lib/date";
 import { CornerFlourish } from "./decor/Ornaments";
 import { GoldDust } from "./decor/Particles";
@@ -50,8 +51,8 @@ function EventCard({ event, index }: { event: WeddingEvent; index: number }) {
           {toDevDigits(index + 1, true)}
         </span>
         {(dateLabel || timeLabel) && (
-          <p className="text-[11px] tracking-[0.18em] text-gold/75">
-            {[dateLabel, timeLabel].filter(Boolean).join(" · ")}
+          <p className="font-numerals text-[11px] tracking-[0.18em] text-gold/75">
+            {toLatinDigits([dateLabel, timeLabel].filter(Boolean).join(" · "))}
           </p>
         )}
       </div>

@@ -5,6 +5,7 @@ import {
   buildMapsSearchUrl,
   formatDateLong,
   formatTimeInIst,
+  toLatinDigits,
 } from "../lib/date";
 import { CornerFlourish } from "./decor/Ornaments";
 import { GoldDust } from "./decor/Particles";
@@ -66,8 +67,8 @@ export function VenueSection() {
               {(dateLabel || timeLabel) && (
                 <div className="mt-5 flex items-start gap-3 border-t border-gold-deep/20 pt-4">
                   <CalendarDays className="mt-0.5 h-4 w-4 shrink-0 text-gold-deep" aria-hidden="true" />
-                  <p className="text-sm text-ink/75">
-                    {[dateLabel, timeLabel].filter(Boolean).join(" · ")}
+                  <p className="font-numerals text-sm text-ink/75">
+                    {toLatinDigits([dateLabel, timeLabel].filter(Boolean).join(" · "))}
                   </p>
                 </div>
               )}

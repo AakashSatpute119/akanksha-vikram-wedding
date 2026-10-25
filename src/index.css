@@ -1,44 +1,21 @@
 @import "tailwindcss";
-@import url("https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Marathi:ital,wght@0,400;1,400&family=Noto+Serif+Devanagari:wght@400;700&family=Noto+Sans+Devanagari:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap");
 
+/* Web fonts are loaded from the <link> in index.html */
+
+/*
+ * Legacy "Infinity" numeral face.
+ * The pack is non-Unicode: it has no Devanagari codepoints, so it may only be
+ * applied to ASCII digits, which it draws as Devanagari numerals (0-9 -> ०-९).
+ * unicode-range keeps the face off letters, so words in the same string fall
+ * through to a real Unicode Devanagari font.
+ */
 @font-face {
-  font-family: "AMS Badakhadi";
-  src: url("/fonts/Ams Badakhadi.ttf") format("truetype");
+  font-family: "Infinity Numerals";
+  src: url("/fonts/Infinity-06.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
-}
-
-@font-face {
-  font-family: "AMS Bad Hand";
-  src: url("/fonts/Ams Bad Hand.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "AMS Calligraphy 10";
-  src: url("/fonts/Ams Calligraphy_10.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "AMS Jambo";
-  src: url("/fonts/Ams Jambo.ttf") format("truetype");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "AMS Sandhya";
-  src: url("/fonts/Ams Sandhya.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
+  unicode-range: U+0020, U+002C, U+002E-003A;
 }
 
 @theme {
@@ -59,11 +36,12 @@
   --font-latin: "Cormorant Garamond", Georgia, "Times New Roman", serif;
   --font-prashant: "Tiro Devanagari Marathi", "Noto Serif Devanagari", serif;
 
-  --font-groom: "AMS Badakhadi", "Tiro Devanagari Marathi", serif;
-  --font-bride: "AMS Bad Hand", "Tiro Devanagari Marathi", serif;
-  --font-hero: "AMS Calligraphy 10", "Tiro Devanagari Marathi", serif;
-  --font-decorative: "AMS Jambo", "Tiro Devanagari Marathi", serif;
-  --font-quote: "AMS Sandhya", "Tiro Devanagari Marathi", serif;
+  --font-groom: "Rozha One", "Tiro Devanagari Marathi", serif;
+  --font-bride: "Rozha One", "Tiro Devanagari Marathi", serif;
+  --font-hero: "Rozha One", "Tiro Devanagari Marathi", serif;
+  --font-decorative: "Rozha One", "Tiro Devanagari Marathi", serif;
+  --font-quote: "Kalam", "Tiro Devanagari Marathi", serif;
+  --font-numerals: "Infinity Numerals", "Tiro Devanagari Marathi", serif;
 
   --shadow-royal: 0 30px 80px -30px rgba(0, 0, 0, 0.75);
   --shadow-gold: 0 0 0 1px rgba(198, 161, 91, 0.35), 0 18px 50px -24px rgba(0, 0, 0, 0.6);
@@ -394,6 +372,11 @@
   .font-decorative { font-family: var(--font-decorative); }
   .font-quote { font-family: var(--font-quote); }
   .font-prashant { font-family: var(--font-prashant); }
+  .font-numerals {
+    font-family: var(--font-numerals);
+    font-variant-numeric: normal;
+    letter-spacing: 0.02em;
+  }
 
   .text-shadow-royal { text-shadow: 0 2px 30px rgba(0, 0, 0, 0.45); }
   .gold-glow { filter: drop-shadow(0 0 18px rgba(229, 202, 139, 0.35)); }

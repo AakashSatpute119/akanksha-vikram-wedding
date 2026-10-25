@@ -1,15 +1,29 @@
 import { wedding, isConfigured } from "../config/wedding";
-import { formatDateLong, formatTimeInIst } from "../lib/date";
-import { CornerFlourish, Divider } from "./decor/Ornaments";
+import { formatDateLong, formatTimeInIst, toLatinDigits } from "../lib/date";
+import { CornerFlourish, Divider, MangoLeaf, WadaSkyline } from "./decor/Ornaments";
 import { GoldDust } from "./decor/Particles";
 import { Reveal } from "./ui/Reveal";
 import { SectionHeading } from "./ui/SectionHeading";
 
-function Detail({ label, value }: { label: string; value: string }) {
+function Detail({
+  label,
+  value,
+  numeric = false,
+}: {
+  label: string;
+  value: string;
+  numeric?: boolean;
+}) {
   return (
     <div className="text-center">
       <p className="font-serif text-sm tracking-[0.22em] text-gold-deep">{label}</p>
-      <p className="mt-1.5 font-serif text-sm leading-snug text-maroon sm:text-base">{value}</p>
+      <p
+        className={`mt-1.5 text-sm leading-snug text-maroon sm:text-base ${
+          numeric ? "font-numerals" : "font-serif"
+        }`}
+      >
+        {numeric ? toLatinDigits(value) : value}
+      </p>
     </div>
   );
 }
@@ -51,18 +65,24 @@ export function InvitationCard() {
         </Reveal>
 
         <Reveal delay={0.1} className="mt-10">
-          <div className="paper double-frame relative overflow-hidden px-6 py-10 shadow-royal sm:px-12 sm:py-14 border-animate">
+          <div className="paper double-frame relative overflow-hidden px-6 pt-10 pb-28 shadow-royal sm:px-12 sm:pt-14 sm:pb-36 border-animate">
             <CornerFlourish className="absolute top-4 left-4 h-12 w-12 text-gold-deep/60 sm:h-16 sm:w-16" />
             <CornerFlourish className="absolute top-4 right-4 h-12 w-12 scale-x-[-1] text-gold-deep/60 sm:h-16 sm:w-16" />
             <CornerFlourish className="absolute bottom-4 left-4 h-12 w-12 scale-y-[-1] text-gold-deep/60 sm:h-16 sm:w-16" />
             <CornerFlourish className="absolute right-4 bottom-4 h-12 w-12 scale-[-1] text-gold-deep/60 sm:h-16 sm:w-16" />
 
-            <div className="relative text-center">
-              <p className="font-serif text-xs tracking-[0.14em] text-maroon sm:text-sm">
-                ॥ श्री गणेशाय नमः ॥
-              </p>
+            <WadaSkyline className="pointer-events-none absolute inset-x-0 bottom-0 block w-full text-gold-deep/10" />
 
-              <h3 className="mt-5 font-hero text-3xl text-maroon sm:text-4xl highlight-glow">
+            <div className="relative text-center">
+              <div className="flex items-center justify-center gap-3">
+                <MangoLeaf className="h-5 w-3.5 rotate-[-22deg] text-gold-deep/60" />
+                <p className="font-serif text-xs tracking-[0.14em] text-maroon sm:text-sm">
+                  ॥ श्री गणेशाय नमः ॥
+                </p>
+                <MangoLeaf className="h-5 w-3.5 rotate-[22deg] scale-x-[-1] text-gold-deep/60" />
+              </div>
+
+              <h3 className="mt-5 font-hero text-3xl text-maroon sm:text-4xl">
                 सस्नेह निमंत्रण!
               </h3>
 
@@ -73,15 +93,15 @@ export function InvitationCard() {
               </p>
 
               <div className="mt-4 flex flex-col items-center gap-2 sm:flex-row sm:justify-center sm:gap-6">
-                <span className="gold-foil font-bride text-4xl leading-tight sm:text-5xl highlight-glow">
+                <span className="gold-foil font-bride text-4xl leading-tight sm:text-5xl">
                   {wedding.brideName}
                 </span>
-                <span className="gold-foil font-groom text-4xl leading-tight sm:text-5xl highlight-glow">
+                <span className="gold-foil font-groom text-4xl leading-tight sm:text-5xl">
                   {wedding.groomName}
                 </span>
               </div>
 
-              <p className="mx-auto mt-4 max-w-lg font-serif text-base leading-relaxed text-maroon sm:text-lg highlight-glow">
+              <p className="mx-auto mt-4 max-w-lg font-serif text-base leading-relaxed text-maroon sm:text-lg">
                 यांचा शुभविवाह सोहळा आयोजित केला आहे.
               </p>
 
@@ -120,8 +140,8 @@ export function InvitationCard() {
 
               {hasDetails ? (
                 <div className="mx-auto mt-8 grid max-w-xl gap-4 border-y border-gold-deep/25 py-6 sm:grid-cols-3">
-                  {dateLabel && <Detail label="शुभ दिनांक" value={dateLabel} />}
-                  {muhurtaLabel && <Detail label="मुहूर्त" value={muhurtaLabel} />}
+                  {dateLabel && <Detail label="शुभ दिनांक" value={dateLabel} numeric />}
+                  {muhurtaLabel && <Detail label="मुहूर्त" value={muhurtaLabel} numeric />}
                   {venueLabel && <Detail label="स्थळ" value={venueLabel} />}
                 </div>
               ) : (
@@ -130,7 +150,7 @@ export function InvitationCard() {
                 </p>
               )}
 
-              <p className="mt-8 font-quote text-sm leading-relaxed text-maroon">
+              <p className="mt-8 mb-16 font-quote text-sm leading-relaxed text-maroon sm:mb-28">
                 सस्नेह,
                 <br />
                 <span className="text-ink/75">वधू-वरांचे कुटुंबीय</span>
